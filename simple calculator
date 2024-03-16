@@ -1,0 +1,27 @@
+#task2
+#Creating a simple calculator with basic arithimetic operations
+#Python programming
+print("SIMPLE CALCULATOR FOR BASIC  ARITHEMETIC OPERATIONS")
+print("select the choice:")
+print("1.ADDITION\n 2.SUBTRACTION\n 3.MULTIPLICATION\n 4.DIVISON\n5.FLOOR DIVISON\n6.MODULUS")
+def Arithemetic_operator(a,b,choice):
+    if choice== 1:
+        print("addition of given two numbers is:",(a+b))
+    elif choice== 2:
+        print("subtraction of two numbers is:",(a-b))
+    elif choice== 3:
+        print("Multiplication of given two numbers is:",(a*b))
+    elif choice== 4:
+        print("Divison of given two numbers is:",(a/b))
+    elif choice== 5:
+        print("Floor division of given two numbers is:",(a//b))
+    else:
+        print("Modulus of given two numbers is:",(a%b))
+while True:
+    choice=int(input("enter any choice(1/2/3/4/5/6):"))
+    a = int(input("enter first number:"))
+    b = int(input("enter second number:"))
+    Arithemetic_operator(a,b,choice)
+    next_calculation=input("Do you want to continue(yes/no)?:")
+    if next_calculation=="no":
+        break
